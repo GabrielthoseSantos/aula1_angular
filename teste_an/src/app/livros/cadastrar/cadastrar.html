@@ -1,0 +1,25 @@
+<p>cadastrar works!</p>
+
+<mat-toolbar>
+    <span>My Application</span>
+</mat-toolbar>
+
+
+
+
+
+
+
+<p *ngIf="mostrarMensagem">Esta mensagem é exibita condicionalmente</p>
+<button (click)="toggleMensagem()">Alternar Mensagem</button>
+
+<ul>
+    <li *ngFor="let item of listaItens">{{ item }}</li> 
+</ul>
+
+<div [ngClass]="{'destaque': isDestaque, 'erro': hasError}">
+    Este elemento tem classes dinâmicas.
+</div>
+
+<app-listar-component></app-listar-component>
+
